@@ -6,7 +6,7 @@ var Stars = React.createClass({
         var stars = [];
 
         for(var i = 0; i < 750; i ++){
-            stars.push(<Star />);
+            stars.push(<Star key={i} />);
         }
         return { stars: stars };
     },

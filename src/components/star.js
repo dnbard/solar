@@ -4,7 +4,7 @@ var Star = React.createClass({
     getInitialState: function(){
         return {
             left: Math.random() * 1080,
-            top: Math.random() * 930,
+            top: Math.random() * 450,
             type: Math.random() > 0.9 ? 'big' : ''
         }
     },

@@ -9,13 +9,13 @@ body{
 }
 
 .viewspace{
-    height: calc(~"100% - 40px");
+    height: 450px;
     width: 1080px;
     margin: 20px auto;
     background: #152937;
     border-radius: 40px;
     position: relative;
-    box-shadow: inset 0 0 400px 100px rgba(0, 0, 0, 0.34);
+    box-shadow: inset 0 0 70px 100px rgba(0, 0, 0, 0.34);
 }
 
 .viewspace__dot{
@@ -66,4 +66,24 @@ body{
             height: 4px;
         }
     }
+}
+
+.planet{
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+
+    .shadow{
+        background: rgba(0, 0, 0, 0.35);
+        position: relative;
+        z-index: 10;
+    }
+}
+
+.particle{
+    position: absolute;
+    background: #BD944D;
+    display: inline-block;
+    z-index: 1;
+    border-radius: 16px;
 }
