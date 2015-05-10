@@ -1,0 +1,69 @@
+html, body, .application{
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    background: #59505F;
+    margin: 0;
+}
+
+.viewspace{
+    height: calc(~"100% - 40px");
+    width: 1080px;
+    margin: 20px auto;
+    background: #152937;
+    border-radius: 40px;
+    position: relative;
+    box-shadow: inset 0 0 400px 100px rgba(0, 0, 0, 0.34);
+}
+
+.viewspace__dot{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #C4C0C9;
+    display: inline-block;
+    border-radius: 50%;
+
+    &.topleft{
+        left: 2px;
+        top: 2px;
+    }
+
+    &.topright{
+        right: 2px;
+        top: 2px;
+    }
+
+    &.bottomleft{
+        left: 2px;
+        bottom: 2px;
+    }
+
+    &.bottomright{
+        right: 2px;
+        bottom: 2px;
+    }
+}
+
+.stars{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+
+    .star{
+        width: 2px;
+        height: 2px;
+        background: white;
+        position: absolute;
+        border-radius: 50%;
+
+        &.big{
+            width: 4px;
+            height: 4px;
+        }
+    }
+}
