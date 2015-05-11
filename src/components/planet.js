@@ -1,20 +1,30 @@
 var React = require('react'),
     Particle = require('./particle'),
+    Line = require('./line'),
     PlanetsData = require('../data/planets');
 
 var Planet = React.createClass({
     getInitialState: function(){
         var particles = [],
-            data = PlanetsData[this.props.name];
+            lines = [],
+            data = PlanetsData[this.props.name],
+            line, particle;
 
-        for(var i = 0; i < data.particles.length; i ++){
+        for(var i = 0; i < (data.lines || []).length; i ++){
+            line = data.lines[i];
+            lines.push(<Line key={'line:' + i} top={line.top} height={line.height} color={line.color}></Line>);
+        }
+
+        for(var i = 0; i < (data.particles || []).length; i ++){
+            particle = data.particles[i];
             for(var j = 0; j < data.particles[i].count; j ++){
-                particles.push(<Particle key={i+':'+j} length={data.size} size={data.size * data.particles[i].size}
-                    speed={data.particles[i].speed} color={data.particles[i].color} layer={data.particles[i].layer}/>);
+                particles.push(<Particle key={'particle:' + i + ',' + j} length={data.size} size={data.size * particle.size}
+                    speed={particle.speed} color={particle.color} layer={particle.layer}/>);
             }
         }
 
         return {
+            lines: lines,
             particles: particles,
             data: data
         };
@@ -35,6 +45,7 @@ var Planet = React.createClass({
         return (<div className="planet" style={style}>
                     <div className="shadow" style={shadowStyle}></div>
                     {this.state.particles}
+                    {this.state.lines}
                 </div>);
     }
 });

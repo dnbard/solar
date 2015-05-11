@@ -3,8 +3,8 @@ var React = require('react');
 var Star = React.createClass({
     getInitialState: function(){
         return {
-            left: Math.random() * 1080,
-            top: Math.random() * 450,
+            left: Math.random() * this.props.boxWidth,
+            top: Math.random() * this.props.boxHeight,
             type: Math.random() > 0.9 ? 'big' : ''
         }
     },

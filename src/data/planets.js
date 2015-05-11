@@ -69,5 +69,49 @@ module.exports = {
             speed: 0.03,
             layer: 2
         }]
+    }, jupiter: {
+        size: 350,
+        color: '#85796E',
+        particles:[{
+            color: '#A3AFBD',
+            count: 32,
+            size: 0.04,
+            speed: 0.2,
+            layer: 3
+        },{
+            color: '#85796E',
+            count: 8,
+            size: 0.06,
+            speed: 0.2,
+            layer: 2
+        }],
+        lines: [{
+            top: 80,
+            height: 180,
+            color: '#A3AFBD'
+        },{
+            top: 95,
+            height: 15,
+            color: '#8D8077'
+        },{
+            top: 125,
+            height: 45,
+            color: '#917761'
+        }, {
+            top: 200,
+            height: 45,
+            color: '#B7A190'
+        }, {
+            top: 280,
+            height: 15,
+            color: '#6E6864'
+        }, {
+            top: 315,
+            height: 35,
+            color: '#574D44'
+        }]
+    }, saturn: {
+        size: 300,
+        color: '#DCBB76'
     }
 };
