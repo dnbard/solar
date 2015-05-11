@@ -19,10 +19,10 @@ var Application = React.createClass({
                     <div className="viewspace__dot bottomleft"></div>
                     <div className="viewspace__dot bottomright"></div>
                     <Stars />
-                    <Planet boxHeight={height} left="50" top="190" color="#E0B15F" size="57" particles="32" />
-                    <Planet boxHeight={height} left="150" top="150" color="#EED4A3" size="141" particles="32" />
-                    <Planet boxHeight={height} left="320" top="148" color="#7078A7" size="150" particles="32" />
-                    <Planet boxHeight={height} left="495" top="185" color="#EB965B" size="79" particles="32" />
+                    <Planet name="mercury" boxHeight={height} left="50" />
+                    <Planet name="venus" boxHeight={height} left="150" />
+                    <Planet name="earth" boxHeight={height} left="320" />
+                    <Planet name="mars" boxHeight={height} left="495" />
                 </div>);
     }
 });

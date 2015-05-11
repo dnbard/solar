@@ -8,7 +8,7 @@ var Particle = React.createClass({
             top: Math.random() * this.props.length,
             width: Math.random() * this.props.size * 1.5 + this.props.size,
             height: this.props.size,
-            velocity: Math.random() * 0.5 + 0.05
+            velocity: this.props.speed
         }
     },
     componentDidMount: function(){
@@ -32,7 +32,9 @@ var Particle = React.createClass({
             left: this.state.left + 'px',
             top: this.state.top + 'px',
             width: this.state.width + 'px',
-            height: this.state.height + 'px'
+            height: this.state.height + 'px',
+            background: this.props.color,
+            zIndex: this.props.layer
         };
 
         return (<div className="particle" style={style}></div>);

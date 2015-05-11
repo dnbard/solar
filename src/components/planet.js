@@ -1,29 +1,35 @@
 var React = require('react'),
-    Particle = require('./particle');
+    Particle = require('./particle'),
+    PlanetsData = require('../data/planets');
 
 var Planet = React.createClass({
     getInitialState: function(){
-        var particles = [];
+        var particles = [],
+            data = PlanetsData[this.props.name];
 
-        for(var i = 0; i < this.props.particles; i ++){
-            particles.push(<Particle key={i} length={this.props.size} size={this.props.size * 0.11} />);
+        for(var i = 0; i < data.particles.length; i ++){
+            for(var j = 0; j < data.particles[i].count; j ++){
+                particles.push(<Particle key={i+':'+j} length={data.size} size={data.size * data.particles[i].size}
+                    speed={data.particles[i].speed} color={data.particles[i].color} layer={data.particles[i].layer}/>);
+            }
         }
 
-       return { particles: particles };
+        return {
+            particles: particles,
+            data: data
+        };
     },
     render: function(){
         var style = {
-            width: this.props.size + 'px',
-            height: this.props.size + 'px',
+            width: this.state.data.size + 'px',
+            height: this.state.data.size + 'px',
             left: this.props.left + 'px',
-            //top: this.props.top + 'px',
-            top: '0px',
-            margin: (this.props.boxHeight - this.props.size) * 0.5 + 'px 0px',
-            background: this.props.color
+            margin: (this.props.boxHeight - this.state.data.size) * 0.5 + 'px 0px',
+            background: this.state.data.color
         }, shadowStyle = {
-            marginLeft: parseInt(this.props.size) * 0.5 + 'px',
-            width: parseInt(this.props.size) * 0.5 + 'px',
-            height: this.props.size + 'px'
+            marginLeft: parseInt(this.state.data.size) * 0.5 + 'px',
+            width: parseInt(this.state.data.size) * 0.5 + 'px',
+            height: this.state.data.size + 'px'
         }, particles = [];
 
         return (<div className="planet" style={style}>
