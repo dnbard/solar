@@ -1,13 +1,29 @@
 var React = require('react'),
     applicationNode = document.querySelector('.application'),
     Application = require('./components/application'),
-    dispatcher = require('./core/dispatcher');
+    dispatcher = require('./core/dispatcher'),
+    performance = require('./core/performance'),
+    PerformanceAlert = require('./components/performanceAlert'),
+    isAnimated = true;
 
-React.render(<Application/>, applicationNode);
+React.render(<div>
+             <Application/>
+             <PerformanceAlert />
+             </div>, applicationNode);
 
 function renderAnimationFrame(){
     dispatcher.dispatch({ action: 'frame' });
-    requestAnimationFrame(renderAnimationFrame);
+    if (isAnimated){
+        requestAnimationFrame(renderAnimationFrame);
+    }
 }
+
+dispatcher.register(function(payload){
+    if (payload.action !== 'frame-stop'){ return; }
+
+    isAnimated = false;
+});
+
+performance.calculate();
 
 requestAnimationFrame(renderAnimationFrame);

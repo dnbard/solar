@@ -112,6 +112,37 @@ module.exports = {
         }]
     }, saturn: {
         size: 300,
-        color: '#DCBB76'
+        color: '#DCBB76',
+        lines:[{
+            top: 0,
+            height: 20,
+            color: '#475158'
+        },{
+            top: 20,
+            height: 55,
+            color: '#93917A'
+        },{
+            top: 75,
+            height: 60,
+            color: '#AA9F74'
+        },{
+            top: 240,
+            height: 40,
+            color: '#B59E75'
+        },{
+            top: 280,
+            height: 20,
+            color: '#58563D'
+        }]
+    }, uranus: {
+        size: 180,
+        color: '#BDE3E6',
+        particles: [{
+            color: '#6E6E6E',
+            count: 27,
+            size: 0.012,
+            speed: 0.4,
+            layer: 2
+        }]
     }
 };
