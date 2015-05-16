@@ -45,25 +45,35 @@ var Planet = React.createClass({
         dispatcher.dispatch({ action: 'planet-select', id: this.state.id });
     },
     render: function(){
-        var boxShadow = [];
+        var boxShadow = [],
+            particles = [],
+            style, shadowStyle;
+
         if (this.state.authmosphere){
             boxShadow.push(this.state.authmosphere);
         }
+
         if (this.state.selected){
-            boxShadow.push('0 0 0 20px rgba(255, 255, 255, 0.3)');
+            boxShadow.push('0 0 0 5px rgba(255, 255, 255, 0.07)');
+            boxShadow.push('0 0 0 10px rgba(255, 255, 255, 0.07)');
+            boxShadow.push('0 0 0 15px rgba(255, 255, 255, 0.07)');
+            boxShadow.push('0 0 0 20px rgba(255, 255, 255, 0.07)');
         }
-        var style = {
+
+        style = {
             width: this.state.data.size + 'px',
             height: this.state.data.size + 'px',
             left: this.props.left + 'px',
             margin: (this.props.boxHeight - this.state.data.size) * 0.5 + 'px 0px',
             background: this.state.data.color,
             boxShadow: boxShadow.join(',')
-        }, shadowStyle = {
+        };
+
+        shadowStyle = {
             marginLeft: parseInt(this.state.data.size) * 0.5 + 'px',
             width: parseInt(this.state.data.size) * 0.5 + 'px',
             height: this.state.data.size + 'px'
-        }, particles = [];
+        };
 
         return (<div className="planet" onClick={this.onPlanetClick} style={style}>
                     <div className="shadow" style={shadowStyle}></div>
