@@ -42,7 +42,11 @@ var Planet = React.createClass({
         }.bind(this));
     },
     onPlanetClick: function(){
-        dispatcher.dispatch({ action: 'planet-select', id: this.state.id });
+        dispatcher.dispatch({
+            action: 'planet-select',
+            id: this.state.id,
+            name: this.props.name
+        });
     },
     render: function(){
         var boxShadow = [],

@@ -4,11 +4,13 @@ var React = require('react'),
     dispatcher = require('./core/dispatcher'),
     performance = require('./core/performance'),
     PerformanceAlert = require('./components/performanceAlert'),
+    Article = require('./components/article'),
     isAnimated = true;
 
 React.render(<div>
-             <Application/>
-             <PerformanceAlert />
+                <Application/>
+                <PerformanceAlert />
+                <Article />
              </div>, applicationNode);
 
 function renderAnimationFrame(){

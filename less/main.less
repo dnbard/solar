@@ -1,6 +1,5 @@
 html, body, .application{
     height: 100%;
-    overflow: hidden;
     padding: 10px;
 }
 
@@ -20,8 +19,9 @@ body{
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 20px;
+    padding: 0 20px;
     box-sizing: border-box;
+    height: 470px !important;
 
     &::-webkit-scrollbar{
         width: 12px;
@@ -51,6 +51,7 @@ body{
     height: 100%;
     border-radius: 40px;
     position: relative;
+    pointer-events: none;
 
     .star{
         width: 2px;
@@ -58,6 +59,7 @@ body{
         background: white;
         position: absolute;
         border-radius: 50%;
+        pointer-events: none;
 
         &.big{
             width: 4px;
@@ -76,6 +78,7 @@ body{
     top: 0px;
     z-index: 1;
     transition: box-shadow .5s ease-out;
+    cursor: pointer;
 
     .shadow{
         background: rgba(0, 0, 0, 0.35);
@@ -89,12 +92,13 @@ body{
     display: inline-block;
     z-index: 1;
     border-radius: 16px;
-    //transition: linear left 50ms;
+    pointer-events: none;
 }
 
 .line{
     position: absolute;
     width: 100%;
+    pointer-events: none;
 }
 
 .saturn__outer-ring{
@@ -108,6 +112,7 @@ body{
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
     transform: rotateX(-40deg);
+    pointer-events: none;
 }
 
 .saturn__inner-ring{
@@ -121,6 +126,7 @@ body{
     height: 150px;
     z-index: 0;
     transform: rotateX(40deg);
+    pointer-events: none;
 }
 
 .performance__alert{
@@ -131,4 +137,36 @@ body{
     width: 100%;
     padding: 20px 0;
     background: #0B171F;
+}
+
+.article{
+    min-height: 33px;
+    margin: 0px auto;
+    color: #FFFFFF;
+    max-width: 1080px;
+    width: 100%;
+    padding: 20px 15px;
+    background: #0B171F;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-sizing: border-box;
+    font-size: 14pt;
+
+    div{
+        margin: 0px 0 12px 0;
+        text-align: justify;
+    }
+
+    .article-node__highlight{
+        font-size: 28pt;
+        margin: 10px 0 30px 0;
+        background: rebeccapurple;
+        display: inline-block;
+        position: relative;
+        left: -25px;
+        padding: 2px 20px 2px 60px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: 2px solid rgb(11, 23, 31);
+    }
 }
