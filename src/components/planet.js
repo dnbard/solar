@@ -1,7 +1,9 @@
 var React = require('react'),
     Particle = require('./particle'),
     Line = require('./line'),
-    PlanetsData = require('../data/planets');
+    PlanetsData = require('../data/planets'),
+    dispatcher = require('../core/dispatcher'),
+    uuid = require('node-uuid').v4;
 
 var Planet = React.createClass({
     getInitialState: function(){
@@ -24,25 +26,46 @@ var Planet = React.createClass({
         }
 
         return {
+            id: uuid(),
             lines: lines,
             particles: particles,
-            data: data
+            data: data,
+            authmosphere: data.authmosphere || null,
+            selected: false
         };
     },
+    componentDidMount: function(){
+        dispatcher.register(function(data){
+            if (data.action !== 'planet-select'){ return; }
+
+            this.setState({ selected: this.state.id === data.id });
+        }.bind(this));
+    },
+    onPlanetClick: function(){
+        dispatcher.dispatch({ action: 'planet-select', id: this.state.id });
+    },
     render: function(){
+        var boxShadow = [];
+        if (this.state.authmosphere){
+            boxShadow.push(this.state.authmosphere);
+        }
+        if (this.state.selected){
+            boxShadow.push('0 0 0 20px rgba(255, 255, 255, 0.3)');
+        }
         var style = {
             width: this.state.data.size + 'px',
             height: this.state.data.size + 'px',
             left: this.props.left + 'px',
             margin: (this.props.boxHeight - this.state.data.size) * 0.5 + 'px 0px',
-            background: this.state.data.color
+            background: this.state.data.color,
+            boxShadow: boxShadow.join(',')
         }, shadowStyle = {
             marginLeft: parseInt(this.state.data.size) * 0.5 + 'px',
             width: parseInt(this.state.data.size) * 0.5 + 'px',
             height: this.state.data.size + 'px'
         }, particles = [];
 
-        return (<div className="planet" style={style}>
+        return (<div className="planet" onClick={this.onPlanetClick} style={style}>
                     <div className="shadow" style={shadowStyle}></div>
                     {this.state.particles}
                     {this.state.lines}

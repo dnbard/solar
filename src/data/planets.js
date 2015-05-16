@@ -24,7 +24,8 @@ module.exports = {
             size: 0.22,
             speed: 0.05,
             layer: 2
-        }]
+        }],
+        authmosphere: '0 0 0px 4px rgba(212, 163, 100, 0.2)'
     }, earth: {
         size: 150,
         color: '#4082D0',
@@ -46,7 +47,8 @@ module.exports = {
             size: 0.01,
             speed: 0.7,
             layer: 4
-        }]
+        }],
+        authmosphere: '0 0 0px 3px rgba(0, 187, 255, 0.3)'
     }, mars: {
         size: 79,
         color: '#F68659',

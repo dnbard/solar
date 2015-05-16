@@ -1,5 +1,5 @@
 {
-  "name": "cw-trade",
+  "name": "solar",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "flux": "^2.0.1",
+    "node-uuid": "^1.4.3",
     "react": "^0.13.1"
   }
 }
