@@ -116,23 +116,23 @@ module.exports = {
         lines:[{
             top: 0,
             height: 20,
-            color: '#475158'
+            color: 'rgba(71, 81, 88, 0.5)'
         },{
             top: 20,
             height: 55,
-            color: '#93917A'
+            color: 'rgba(147, 145, 122, 0.5)'
         },{
             top: 75,
             height: 60,
-            color: '#AA9F74'
+            color: 'rgba(170, 159, 116, 0.5)'
         },{
             top: 240,
             height: 40,
-            color: '#B59E75'
+            color: 'rgba(181, 158, 117, 0.5)'
         },{
             top: 280,
             height: 20,
-            color: '#58563D'
+            color: 'rgba(88, 86, 61, 0.5)'
         }]
     }, uranus: {
         size: 180,
