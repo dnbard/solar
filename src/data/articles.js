@@ -1,4 +1,60 @@
 module.exports = {
+    venus: [{
+        text: 'Venus',
+        class: 'article-node__highlight'
+    },{
+        text: 'Venus is the second planet from the Sun and is the second brightest object in the night sky after the Moon. Named after the Roman goddess of love and beauty, Venus is the second largest terrestrial planet and is sometimes referred to as the Earth’s sister planet due the their similar size and mass. The surface of the planet is obscured by an opaque layer of clouds made up of sulfuric acid.'
+    },{
+        text: 'A day on Venus lasts longer than a year',
+        class: 'article-node__fact'
+    },{
+        text: 'It takes 243 Earth days to rotate once on its axis. The planet’s orbit around the Sun takes 225 Earth days, compared to the Earth’s 365.'
+    },{
+        text: 'Venus is often called the Earth’s sister planet',
+        class: 'article-node__fact'
+    },{
+        text: 'The Earth and Venus are very similar in size with only a 638 km difference in diameter, Venus having 81.5% of the Earth’s mass. Both also have a central core, a molten mantle and a crust.'
+    },{
+        text: 'Venus rotates counter-clockwise',
+        class: 'article-node__fact'
+    },{
+        text: 'Also known as retrograde rotation. A possible reason might be a collision in the past with an asteroid or other object that caused the planet to alter its rotational path. It also differs from most other planets in our solar system by having no natural satellites.'
+    },{
+        text: 'Venus is the second brightest object in the night sky',
+        class: 'article-node__fact'
+    },{
+        text: 'Only the Moon is brighter. With a magnitude of between -3.8 to -4.6 Venus is so bright it can be seen during daytime on a clear day.'
+    },{
+        text: 'Atmospheric pressure on Venus is 92 times greater than the Earth’s',
+        class: 'article-node__fact'
+    },{
+        text: 'While its size and mass are similar to Earth, the small asteroids are crushed when entering its atmosphere, meaning no small craters lie on the surface of the planet. The pressure felt by a human on the surface would be equivalent to that experienced deep beneath the sea on Earth.'
+    },{
+        text: 'Venus is also known as the Morning Star and the Evening Star',
+        class: 'article-node__fact'
+    },{
+        text: 'Early civilisations thought Venus was two different bodies, called Phosphorus and Hesperus by the Greeks, and Lucifer and Vesper by the Romans. This is because when its orbit around the Sun overtakes Earth’s orbit, it changes from being visible after sunset to being visible before sunrise. Mayan astronomers made detailed observations of Venus as early as 650 AD.'
+    },{
+        text: 'Venus is the hottest planet in our solar system',
+        class: 'article-node__fact'
+    },{
+        text: 'The average surface temperature is 462 °C, and because Venus does not tilt on its axis, there is no seasonal variation. The dense atmosphere of around 96.5 percent carbon dioxide traps heat and causes a greenhouse effect.'
+    },{
+        text: 'A detailed study of Venus is currently underway',
+        class: 'article-node__fact'
+    },{
+        text: 'In 2006, the Venus Express space shuttle was sent into orbit around Venus by the European Space Agency, and is sending back information about the planet. Originally planned to last five hundred Earth days, the mission has been extended several times. More than 1,000 volcanoes or volcanic centres larger than 20 km have been found on the surface of Venus.'
+    },{
+        text: 'The Russians sent the first mission to Venus',
+        class: 'article-node__fact'
+    },{
+        text: 'The Venera 1 space probe was launched in 1961, but lost contact with base. The USA also lost their first probe to Venus, Mariner 1, although Mariner 2 was able to take measurements of the planet in 1962. The Soviet Union’s Venera 3 was the first man-made craft to land on Venus in 1966.'
+    },{
+        text: 'At one point it was thought Venus might be a tropical paradise',
+        class: 'article-node__fact'
+    },{
+        text: 'The dense clouds of sulphuric acid surrounding Venus make it impossible to view its surface from outside its atmosphere. It was only when radio mapping was developed in the 1960s that scientists were able to observe and measure the extreme temperatures and hostile environment. It is thought Venus did once have oceans but these evaporated as the planets temperature increased.'
+    }],
     solar: [{
         text: 'Solar System',
         class: 'article-node__highlight'

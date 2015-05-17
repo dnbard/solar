@@ -30,6 +30,12 @@ gulp.task('layout', function () {
         .pipe(gulp.dest('./dist'));
 });
 
+gulp.task('fonts', function () {
+    gulp.src('./fonts/*')
+        .pipe(plumber())
+        .pipe(gulp.dest('./dist/fonts'));
+});
+
 gulp.task('less', function () {
     return gulp.src('./less/main.less')
         .pipe(plumber())
@@ -56,7 +62,7 @@ gulp.task('javascript', function () {
         .pipe(gulp.dest('./dist/scripts'))
 });
 
-gulp.task('default', ['less', 'javascript', 'layout', 'serve'], function () {
+gulp.task('default', ['fonts', 'less', 'javascript', 'layout', 'serve'], function () {
     var jsWatcher = gulp.watch('src/**/*.js', ['javascript']);
     var htmlWatcher = gulp.watch('view/**/*.html', ['layout']);
     var lessWatcher = gulp.watch('less/main.less', ['less']);

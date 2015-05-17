@@ -188,3 +188,34 @@ body{
         font-weight: bold;
     }
 }
+
+.social{
+    text-align: center;
+    margin: 15px 0 0 0;
+    color: darkgray;
+    font-size: 20pt;
+
+    div{
+        display: inline-block;
+    }
+
+    .icon-info{
+        display: inline-block;
+        cursor: pointer;
+        transition: 0.25s all;
+        margin: 0 10px;
+        vertical-align: top;
+        width: 33px;
+        height: 33px;
+        background: gray;
+        padding-top: 5px;
+        box-sizing: border-box;
+        color: white;
+
+        &:hover{
+            color: white;
+        }
+    }
+}
+
+@import (inline, css)'./font.css';

@@ -5,12 +5,14 @@ var React = require('react'),
     performance = require('./core/performance'),
     PerformanceAlert = require('./components/performanceAlert'),
     Article = require('./components/article'),
+    Social = require('./components/social'),
     isAnimated = true;
 
 React.render(<div>
                 <Application/>
                 <PerformanceAlert />
                 <Article />
+                <Social />
              </div>, applicationNode);
 
 function renderAnimationFrame(){
