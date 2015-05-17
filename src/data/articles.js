@@ -1,4 +1,60 @@
 module.exports = {
+    jupiter: [{
+        text: 'Jupiter',
+        class: 'article-node__highlight'
+    }, {
+        text: 'The planet Jupiter is the fifth planet out from the Sun, and is two and a half times more massive than all the other planets in the solar system combined. It is made primarily of gases and is therefore known as a “gas giant”.'
+    },{
+        text: 'Jupiter is the fourth brightest object in the solar system',
+        class: 'article-node__fact'
+    },{
+        text: 'Only the Sun, Moon and Venus are brighter. It is one of five planets visible to the naked eye from Earth.'
+    },{
+        text: 'The ancient Babylonians were the first to record their sightings of Jupiter',
+        class: 'article-node__fact'
+    },{
+        text: 'This was around the 7th or 8th century BC. Jupiter is named after the king of the Roman gods. To the Greeks, it represented Zeus, the god of thunder. The Mesopotamians saw Jupiter as the god Marduk and patron of the city of Babylon. Germanic tribes saw this planet as Donar, or Thor.'
+    },{
+        text: 'Jupiter has the shortest day of all the planets',
+        class: 'article-node__fact'
+    },{
+        text: 'It turns on its axis once every 9 hours and 55 minutes. The rapid rotation flattens the planet slightly, giving it an oblate shape.'
+    },{
+        text: 'Jupiter orbits the Sun once every 11.8 Earth years',
+        class: 'article-node__fact'
+    },{
+        text: 'From our point of view on Earth, it appears to move slowly in the sky, taking months to move from one constellation to another.'
+    },{
+        text: 'Jupiter has unique cloud features',
+        class: 'article-node__fact'
+    },{
+        text: 'The upper atmosphere of Jupiter is divided into cloud belts and zones. They are made primarily of ammonia crystals, sulfur, and mixtures of the two compounds.'
+    },{
+        text: 'The Great Red Spot is a huge storm on Jupiter',
+        class: 'article-node__fact'
+    },{
+        text: 'It has raged for at least 350 years. It is so large that three Earths could fit inside it.'
+    },{
+        text: 'Jupiter’s interior is made of rock, metal, and hydrogen compounds',
+        class: 'article-node__fact'
+    },{
+        text: 'Below Jupiter’s massive atmosphere (which is made primarily of hydrogen), there are layers of compressed hydrogen gas, liquid metallic hydrogen, and a core of ice, rock, and metals.'
+    },{
+        text: 'Jupiter’s moon Ganymede is the largest moon in the solar system',
+        class: 'article-node__fact'
+    },{
+        text: 'Jupiter’s moons are sometimes called the Jovian satellites, the largest of these are Ganymeade, Callisto Io and Europa. Ganymeade measures 5,268 km across, making it larger than the planet Mercury.'
+    },{
+        text: 'Jupiter has a thin ring system',
+        class: 'article-node__fact'
+    },{
+        text: 'Its rings are composed mainly of dust particles ejected from some of Jupiter’s smaller worlds during impacts from incoming comets and asteroids. The ring system begins some 92,000 kilometres above Jupiter’s cloud tops and stretches out to more than 225,000 km from the planet. They are between 2,000 to 12,500 kilometres thick.'
+    },{
+        text: 'Eight spacecraft have visited Jupiter',
+        class: 'article-node__fact'
+    },{
+        text: 'Pioneer 10 and 11, Voyager 1 and 2, Galileo, Cassini, Ulysses, and New Horizons missions. The Juno mission is its way to Jupiter and will arrive in July 2016. Other future missions may focus on the Jovian moons Europa, Ganymede, and Callisto, and their subsurface oceans.'
+    }],
     mars: [{
         text: 'Mars',
         class: 'article-node__highlight'
