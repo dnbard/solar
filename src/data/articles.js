@@ -46,5 +46,61 @@ module.exports = {
     }, {
         text: 'Of all the planets in our solar system, the Earth has the greatest density',
         class: 'article-node__fact'
+    }],
+    mercury: [{
+        text: 'Mercury',
+        class: 'article-node__highlight'
+    }, {
+        text: 'Mercury is the closest planet to the Sun and due to its proximity it is not easily seen except during twilight. For every two orbits of the Sun, Mercury completes three rotations about its axis and up until 1965 it was thought that the same side of Mercury constantly faced the Sun. Thirteen times a century Mercury can be observed from the Earth passing across the face of the Sun in an event called a transit, the next will occur on the 9th May 2016.'
+    }, {
+        text: 'A year on Mercury is just 88 days long',
+        class: 'article-node__fact'
+    }, {
+        text: 'One solar day (the time from noon to noon on the planet’s surface) on Mercury lasts the equivalent of 176 Earth days while the sidereal day (the time for 1 rotation in relation to a fixed point) lasts 59 Earth days. Mercury is nearly tidally locked to the Sun and over time this has slowed the rotation of the planet to almost match its orbit around the Sun. Mercury also has the highest orbital eccentricity of all the planets with its distance from the Sun ranging from 46 to 70 million km.'
+    }, {
+        text: 'Mercury is the smallest planet in the Solar System',
+        class: 'article-node__fact'
+    }, {
+        text: 'One of five planets visible with the naked eye a, Mercury is just 4,879 Kilometres across its equator, compared with 12,742 Kilometres for the Earth.'
+    }, {
+        text: 'Mercury is the second densest planet',
+        class: 'article-node__fact'
+    }, {
+        text: 'Even though the planet is small, Mercury is very dense. Each cubic centimetre has a density of 5.4 grams, with only the Earth having a higher density. This is largely due to Mercury being composed mainly of heavy metals and rock.'
+    }, {
+        text: 'Mercury has wrinkles',
+        class: 'article-node__fact'
+    }, {
+        text: 'As the iron core of the planet cooled and contracted, the surface of the planet became wrinkled. Scientist have named these wrinkles, Lobate Scarps. These Scarps can be up to a mile high and hundreds of miles long.'
+    }, {
+        text: 'Mercury has a molten core',
+        class: 'article-node__fact'
+    }, {
+        text: 'In recent years scientists from NASA have come to believe the solid iron core of Mercury could in fact be molten. Normally the core of smaller planets cools rapidly, but after extensive research, the results were not in line with those expected from a solid core. Scientists now believe the core to contain a lighter element such as sulphur, which would lower the melting temperature of the core material. It is estimated Mercury’s core makes up 42% of its volume, while the Earth’s core makes up 17%.'
+    }, {
+        text: 'Mercury is only the second hottest planet',
+        class: 'article-node__fact'
+    }, {
+        text: 'Despite being further from the Sun, Venus experiences higher temperatures. The surface of Mercury which faces the Sun sees temperatures of up to 427°C, whilst on the alternate side this can be as low as -173°C. This is due to the planet having no atmosphere to help regulate the temperature.'
+    }, {
+        text: 'Mercury is the most cratered planet in the Solar System',
+        class: 'article-node__fact'
+    },{
+        text: 'Unlike many other planets which “self-heal” through natural geological processes, the surface of Mercury is covered in craters. These are caused by numerous encounters with asteroids and comets. Most Mercurian craters are named after famous writers and artists. Any crater larger than 250 kilometres in diameter is referred to as a Basin. The Caloris Basin is the largest impact crater on Mercury covering approximately 1,550 km in diameter and was discovered in 1974 by the Mariner 10 probe.'
+    }, {
+        text: 'Only two spacecraft have ever visited Mercury',
+        class: 'article-node__fact'
+    },{
+        text: 'Owing to its proximity to the Sun, Mercury is a difficult planet to visit. During 1974 and 1975 Mariner 10 flew by Mercury three times, during this time they mapped just under half of the planet’s surface. On August 3rd 2004, the Messenger probe was launched from Cape Canaveral Air Force Station, this was the first spacecraft to visit since the mid 1970’s.'
+    }, {
+        text: 'Mercury is named for the Roman messenger to the gods',
+        class: 'article-node__fact'
+    }, {
+        text: 'The exact date of Mercury’s discovery is unknown as it pre-dates its first historical mention, one of the first mentions being by the Sumerians around in 3,000 BC.'
+    }, {
+        text: 'Mercury has an atmosphere',
+        class: 'article-node__fact'
+    },{
+        text: 'Mercury has just 38% the gravity of Earth, this is too little to hold on to what atmosphere it has which is blown away by solar winds. However while gases escape into space they are constantly being replenished at the same time by the same solar winds, radioactive decay and dust caused by micrometeorites'
     }]
 };
