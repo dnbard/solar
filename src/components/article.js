@@ -20,7 +20,7 @@ var Article = React.createClass({
     render: function(){
         var selectedArticle = this.state.selectedPlanet || 'solar',
             articleText = (articlesData[selectedArticle] || []).map(function(node){
-                var nodeClass = node.class || null;
+                var nodeClass = node.class || 'article-node__default';
                 return (<div className={nodeClass}>{node.text}</div>);
             });
 
