@@ -10,6 +10,7 @@ var Planet = React.createClass({
         var particles = [],
             lines = [],
             data = PlanetsData[this.props.name],
+            rotation = this.props.name === 'venus' ? 1 : -1,
             line, particle;
 
         for(var i = 0; i < (data.lines || []).length; i ++){
@@ -21,7 +22,7 @@ var Planet = React.createClass({
             particle = data.particles[i];
             for(var j = 0; j < data.particles[i].count; j ++){
                 particles.push(<Particle key={'particle:' + i + ',' + j} length={data.size} size={data.size * particle.size}
-                    speed={particle.speed} color={particle.color} layer={particle.layer}/>);
+                    speed={particle.speed} color={particle.color} layer={particle.layer} rotation={rotation}/>);
             }
         }
 

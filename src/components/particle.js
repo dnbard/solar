@@ -16,13 +16,17 @@ var Particle = React.createClass({
         this.dispatcherHandler = function(data){
             if (data.action !== 'frame'){ return };
 
-            if (this.state.left + this.state.width < 0){
+            if ((this.state.left + this.state.width < 0) && this.props.rotation === -1){
                 return this.setState({
-                    left: this.props.length * 1
+                    left: this.props.length
+                });
+            } else if ((this.state.left > this.props.length) && this.props.rotation === 1){
+                return this.setState({
+                    left: 0 - this.state.width
                 });
             }
 
-            this.setState({ left: this.state.left - this.state.velocity });
+            this.setState({ left: this.state.left + this.state.velocity * this.props.rotation });
         }.bind(this);
 
         dispatcher.register(this.dispatcherHandler);
