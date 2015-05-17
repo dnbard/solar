@@ -14,7 +14,11 @@ var Article = React.createClass({
                 return;
             }
 
-            this.setState({ selectedPlanet: data.name });
+            if (this.state.selectedPlanet === data.name){
+                this.setState({ selectedPlanet: null });
+            } else {
+                this.setState({ selectedPlanet: data.name });
+            }
         }.bind(this));
     },
     render: function(){

@@ -38,7 +38,7 @@ var Planet = React.createClass({
         dispatcher.register(function(data){
             if (data.action !== 'planet-select'){ return; }
 
-            this.setState({ selected: this.state.id === data.id });
+            this.setState({ selected: this.state.id === data.id && !this.state.selected });
         }.bind(this));
     },
     onPlanetClick: function(){
