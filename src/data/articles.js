@@ -1,4 +1,65 @@
 module.exports = {
+    saturn: [{
+        text: 'Saturn',
+        class: 'article-node__highlight'
+    },{
+        text: 'Saturn is the sixth planet from the Sun and the most distant that can be seen with the naked eye. It is best known for its fabulous ring system that was discovered in 1610 by the astronomer Galileo Galilei.'
+    },{
+        text: 'Saturn can be seen with the naked eye',
+        class: 'article-node__fact'
+    },{
+        text: 'It is the fifth brightest object in the solar system and is also easily studied through binoculars or a small telescope.'
+    },{
+        text: 'Saturn was known to the ancients, including the Babylonians and Far Eastern observers',
+        class: 'article-node__fact'
+    },{
+        text: 'It is named for the Roman god Saturnus, and was known to the Greeks as Cronus.'
+    },{
+        text: 'Saturn is the flattest planet',
+        class: 'article-node__fact'
+    },{
+        text: 'Its polar diameter is 90% of its equatorial diameter, this is due to its low density and fast rotation. Saturn turns on its axis once every 10 hours and 34 minutes giving it the second-shortest day of any of the solar system’s planets.'
+    },{
+        text: 'Saturn orbits the Sun once every 29.4 Earth years',
+        class: 'article-node__fact'
+    },{
+        text: 'Its slow movement against the backdrop of stars earned it the nickname of “Lubadsagush” from the ancient Assyrians. The name means “oldest of the old”.'
+    },{
+        text: 'Saturn’s upper atmosphere is divided into bands of clouds',
+        class: 'article-node__fact'
+    },{
+        text: 'The top layers are mostly ammonia ice. Below them, the clouds are largely water ice. Below are layers of cold hydrogen and sulfur ice mixtures.'
+    },{
+        text: 'Saturn has oval-shaped storms similar to Jupiter’s',
+        class: 'article-node__fact'
+    },{
+        text: 'The region around its north pole has a hexagonal-shaped pattern of clouds. Scientists think this may be a wave pattern in the upper clouds. The planet also has a vortex over its south pole that resembles a hurricane-like storm.'
+    },{
+        text: 'Saturn is made mostly of hydrogen',
+        class: 'article-node__fact'
+    },{
+        text: 'It exists in layers that get denser farther into the planet. Eventually, deep inside, the hydrogen becomes metallic. At the core lies a hot interior.'
+    },{
+        text: 'Saturn has the most extensive rings in the solar system',
+        class: 'article-node__fact'
+    },{
+        text: 'The Saturnian rings are made mostly of chunks of ice and small amounts of carbonaceous dust. The rings stretch out more than 120,700 km from the planet, but are are amazingly thin: only about 20 meters thick.'
+    },{
+        text: 'Saturn has 150 moons and smaller moonlets',
+        class: 'article-node__fact'
+    },{
+        text: 'All are frozen worlds. The largest moons are Titan and Rhea. Enceladus appears to have an ocean below its frozen surface.'
+    },{
+        text: 'Titan is a moon with complex and dense nitrogen-rich atmosphere',
+        class: 'article-node__fact'
+    },{
+        text: 'It is composed mostly of water ice and rock. Its frozen surface has lakes of liquid methane and landscapes covered with frozen nitrogen. Planetary scientists consider Titan to be a possible harbour for life, but not Earth-like life.'
+    },{
+        text: 'Four spacecraft have visited Saturn',
+        class: 'article-node__fact'
+    },{
+        text: 'Pioneer 11, Voyager 1 and 2, and the Cassini-Huygens mission have all studied the planet. Cassini continues to orbit Saturn, sending back a wealth of data about the planet, its moons, and rings.'
+    }],
     jupiter: [{
         text: 'Jupiter',
         class: 'article-node__highlight'
