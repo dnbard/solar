@@ -102,6 +102,8 @@ module.exports = {
     }, {
         text: 'Of all the planets in our solar system, the Earth has the greatest density',
         class: 'article-node__fact'
+    },{
+        text: 'This varies according to the part of the planet; for example, the metallic core is denser than the crust. The average density of the Earth is approximately 5.52 grams per cubic centimetre.'
     }],
     mercury: [{
         text: 'Mercury',
