@@ -1,0 +1,251 @@
+html,
+body,
+.application {
+  padding: 10px;
+}
+body {
+  background: #59505F;
+  margin: 0;
+  overflow-y: scroll;
+}
+.viewspace {
+  margin: 10px auto 0 auto;
+  background: #152937;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+  box-shadow: inset 0 0 70px 100px rgba(0, 0, 0, 0.35);
+  max-width: 1080px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 20px;
+  box-sizing: border-box;
+  height: 470px !important;
+}
+.viewspace::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+.viewspace::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+.viewspace::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+}
+.viewspace__dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #C4C0C9;
+  display: inline-block;
+  border-radius: 50%;
+}
+.stars {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  position: relative;
+  pointer-events: none;
+}
+.stars .star {
+  width: 2px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.stars .star.big {
+  width: 4px;
+  height: 4px;
+}
+.planet {
+  position: absolute;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  overflow: hidden;
+  top: 0px;
+  z-index: 1;
+  transition: box-shadow 0.5s ease-out;
+  cursor: pointer;
+}
+.planet .shadow {
+  background: rgba(0, 0, 0, 0.35);
+  position: relative;
+  z-index: 10;
+}
+.particle {
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
+  border-radius: 16px;
+  pointer-events: none;
+}
+.line {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+}
+.saturn__outer-ring {
+  position: absolute;
+  left: 975px;
+  width: 350px;
+  background: linear-gradient(180deg, rgba(220, 187, 118, 0) 40%, #b3a27d 80%);
+  background: -webkit-linear-gradient(top, rgba(220, 187, 118, 0) 40%, #b3a27d 80%);
+  height: 150px;
+  top: 150px;
+  z-index: 25;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  transform: rotateX(-40deg);
+  pointer-events: none;
+}
+.saturn__inner-ring {
+  position: absolute;
+  left: 975px;
+  width: 350px;
+  top: 145px;
+  background: linear-gradient(0deg, rgba(220, 187, 118, 0) 40%, #cfb173 80%);
+  background: -webkit-linear-gradient(bottom, rgba(220, 187, 118, 0) 40%, #cfb173 80%);
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  height: 150px;
+  z-index: 0;
+  transform: rotateX(40deg);
+  pointer-events: none;
+}
+.performance__alert {
+  margin: 0px auto;
+  text-align: center;
+  color: #f49e9e;
+  max-width: 1080px;
+  width: 100%;
+  padding: 20px 0;
+  background: #0B171F;
+}
+.article {
+  min-height: 33px;
+  margin: 0px auto;
+  color: #ecf0f1;
+  max-width: 1080px;
+  width: 100%;
+  padding: 20px 15px;
+  background: #2c3e50;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-sizing: border-box;
+  font-size: 14pt;
+}
+.article div {
+  margin: 0px 0 12px 0;
+  text-align: justify;
+}
+.article .article-node__default:first-letter {
+  margin-left: 40px;
+}
+.article .article-node__highlight {
+  font-size: 28pt;
+  font-weight: bold;
+  margin: 10px 0 30px 0;
+  background: #8e44ad;
+  display: inline-block;
+  position: relative;
+  left: -25px;
+  padding: 2px 20px 2px 60px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid #2c3e50;
+}
+.article .article-node__fact {
+  display: block;
+  padding: 18px 0px 4px 40px;
+  position: relative;
+  font-weight: bold;
+  margin: 24px 0 12px 0px;
+  color: lightgray;
+  border-top: 1px dotted gray;
+}
+.social {
+  text-align: center;
+  margin: 15px 0 0 0;
+  color: darkgray;
+  font-size: 20pt;
+}
+.social div {
+  display: inline-block;
+}
+.social .icon-info {
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.25s all;
+  margin: 0 10px;
+  vertical-align: top;
+  width: 33px;
+  height: 33px;
+  background: gray;
+  padding-top: 5px;
+  box-sizing: border-box;
+  color: white;
+}
+.social .icon-info:hover {
+  color: white;
+}
+@charset "UTF-8";
+
+@font-face {
+  font-family: "solar";
+  src:url("fonts/solar.eot");
+  src:url("fonts/solar.eot?#iefix") format("embedded-opentype"),
+    url("fonts/solar.woff") format("woff"),
+    url("fonts/solar.ttf") format("truetype"),
+    url("fonts/solar.svg#solar") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "solar" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "solar" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "a";
+}
+.icon-twitter:before {
+  content: "b";
+}
+.icon-github:before {
+  content: "c";
+}
+.icon-vkontakte:before {
+  content: "e";
+}
+.icon-info:before {
+  content: "d";
+}
+
