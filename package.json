@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babelify": "^6.1.2",
     "browser-sync": "^2.5.3",
     "browserify": "^9.0.8",
     "gulp": "^3.8.11",

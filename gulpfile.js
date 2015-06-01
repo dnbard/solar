@@ -6,6 +6,7 @@ var gutil = require('gulp-util');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 var reactify = require('reactify');
+var babelify = require('babelify');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload
 var plumber = require('gulp-plumber');
@@ -26,13 +27,14 @@ gulp.task('serve', function () {
 
 gulp.task('layout', function () {
     gulp.src('./view/index.html')
-        .pipe(plumber())
+        .pipe(gulp.dest('./dist'));
+
+    gulp.src('./src/htmlgl.js')
         .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('fonts', function () {
     gulp.src('./fonts/*')
-        .pipe(plumber())
         .pipe(gulp.dest('./dist/fonts'));
 });
 
@@ -47,7 +49,7 @@ gulp.task('javascript', function () {
     var bundleStream = browserify({
         entries: './src/app.js',
         debug: true,
-        transform: [reactify]
+        transform: [reactify, babelify]
     }).bundle();
 
     bundleStream
