@@ -9,7 +9,7 @@ var React = require('react'),
     isAnimated = true;
 
 React.render(<div>
-                <Application/>
+                <Application id="aappy"/>
                 <PerformanceAlert />
                 <Article />
                 <Social />

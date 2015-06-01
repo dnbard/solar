@@ -36,8 +36,7 @@ var Particle = React.createClass({
     },
     render: function (){
         var style = {
-            left: this.state.left,
-            top: this.state.top,
+            transform: `translate3D(${this.state.left}px, ${this.state.top}px, 0)`,
             width: this.state.width,
             height: this.state.height,
             background: this.props.color,

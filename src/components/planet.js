@@ -68,8 +68,7 @@ var Planet = React.createClass({
         style = {
             width: this.state.data.size + 'px',
             height: this.state.data.size + 'px',
-            left: this.props.left + 'px',
-            margin: (this.props.boxHeight - this.state.data.size) * 0.5 + 'px 0px',
+            transform: `translate3D(${this.props.left}px, ${(this.props.boxHeight - this.state.data.size) * 0.5}px, 0)`,
             background: this.state.data.color,
             boxShadow: boxShadow.join(',')
         };

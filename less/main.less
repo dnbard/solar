@@ -60,6 +60,8 @@ body{
         position: absolute;
         border-radius: 50%;
         pointer-events: none;
+        top: 0;
+        left: 0;
 
         &.big{
             width: 4px;
@@ -76,6 +78,7 @@ body{
     border-bottom-right-radius: 50%;
     overflow: hidden;
     top: 0px;
+    left: 0px;
     z-index: 1;
     transition: box-shadow .5s ease-out;
     cursor: pointer;
@@ -93,12 +96,16 @@ body{
     z-index: 1;
     border-radius: 16px;
     pointer-events: none;
+    top: 0px;
+    left: 0px;
 }
 
 .line{
     position: absolute;
+    top: 0px;
     width: 100%;
     pointer-events: none;
+    display: inline-block;
 }
 
 .saturn__outer-ring{
