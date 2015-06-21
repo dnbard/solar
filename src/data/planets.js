@@ -146,5 +146,48 @@ module.exports = {
             speed: 0.4,
             layer: 2
         }]
+    }, neptune: {
+        size: 170,
+        color: '#1B54BE',
+        particles: [{
+            color: '#16387F',
+            count: 2,
+            size: 0.22,
+            speed: 0.2,
+            layer: 2
+        },{
+            color: '#FCFEF2',
+            count: 5,
+            size: 0.1,
+            speed: 0.3,
+            layer: 3
+        },{
+            color: '#2871B5',
+            count: 10,
+            size: 0.08,
+            speed: 0.4,
+            layer: 4
+        }],
+        lines: [{
+            top: 0,
+            height: 25,
+            color: '#4FA2D3'
+        },{
+            top: 25,
+            height: 35,
+            color: '#246CB6'
+        },{
+            top: 60,
+            height: 60,
+            color: '#39A6DE'
+        },{
+            top: 120,
+            height: 30,
+            color: '#1E5CB1'
+        },{
+            top: 145,
+            height: 30,
+            color: '#4DADE0'
+        }]
     }
 };

@@ -36,6 +36,7 @@ var Application = React.createClass({
                     <div className="saturn__outer-ring"></div>
                     <div className="saturn__inner-ring"></div>
                     <Planet name="uranus" boxHeight={height} left="1350" />
+                    <Planet name="neptune" boxHeight={height} left="1550" />
                 </div>);
     }
 });
