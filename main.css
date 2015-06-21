@@ -55,6 +55,8 @@ body {
   position: absolute;
   border-radius: 50%;
   pointer-events: none;
+  top: 0;
+  left: 0;
 }
 .stars .star.big {
   width: 4px;
@@ -68,6 +70,7 @@ body {
   border-bottom-right-radius: 50%;
   overflow: hidden;
   top: 0px;
+  left: 0px;
   z-index: 1;
   transition: box-shadow 0.5s ease-out;
   cursor: pointer;
@@ -83,11 +86,15 @@ body {
   z-index: 1;
   border-radius: 16px;
   pointer-events: none;
+  top: 0px;
+  left: 0px;
 }
 .line {
   position: absolute;
+  top: 0px;
   width: 100%;
   pointer-events: none;
+  display: inline-block;
 }
 .saturn__outer-ring {
   position: absolute;
@@ -161,10 +168,10 @@ body {
 }
 .article .article-node__fact {
   display: block;
-  padding: 18px 0px 4px 40px;
+  padding: 4px 40px;
   position: relative;
   font-weight: bold;
-  margin: 24px 0 12px 0px;
+  margin: 32px 0 12px 0px;
   color: lightgray;
   border-top: 1px dotted gray;
 }
