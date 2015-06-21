@@ -318,5 +318,51 @@ module.exports = {
         class: 'article-node__fact'
     },{
         text: 'Mercury has just 38% the gravity of Earth, this is too little to hold on to what atmosphere it has which is blown away by solar winds. However while gases escape into space they are constantly being replenished at the same time by the same solar winds, radioactive decay and dust caused by micrometeorites'
+    }],
+    uranus:[{
+        text: 'Uranus',
+        class: 'article-node__highlight'
+    },{
+        text: 'Uranus is the seventh planet from the Sun. It’s not visible to the naked eye, and became the first planet discovered with the use of a telescope. Uranus is tipped over on its side with an axial tilt of 98 degrees. It is often described as “rolling around the Sun on its side.”'
+    },{
+        text: 'Uranus was officially discovered by Sir William Herschel in 1781',
+        class: 'article-node__fact'
+    },{
+        text: 'It is too dim to have been seen by the ancients. At first Herschel thought it was a comet, but several years later it was confirmed as a planet. Herscal tried to have his discovery named “Georgian Sidus” after King George III. The name Uranus was suggested by astronomer Johann Bode. The name comes from the ancient Greek deity Ouranos.'
+    },{
+        text: 'Uranus turns on its axis once every 17 hours, 14 minutes',
+        class: 'article-node__fact'
+    },{
+        text: 'The planet rotates in a retrograde direction, opposite to the way Earth and most other planets turn.'
+    },{
+        text: 'Uranus makes one trip around the Sun every 84 Earth years',
+        class: 'article-node__fact'
+    },{
+        text: 'During some parts of its orbit one or the other of its poles point directly at the Sun and get about 42 years of direct sunlight. The rest of the time they are in darkness.'
+    },{
+        text: 'Uranus is often referred to as an “ice giant” planet',
+        class: 'article-node__fact'
+    },{
+        text: 'Like the other gas giants, it has a hydrogen upper layer, which has helium mixed in. Below that is an icy “mantle, which surrounds a rock and ice core. The upper atmosphere is made of water, ammonia and the methane ice crystals that give the planet its pale blue color.'
+    },{
+        text: 'Uranus hits the coldest temperatures of any planet',
+        class: 'article-node__fact'
+    },{
+        text: 'With minimum atmospheric temperature of -224°C Uranus is nearly coldest planet in the solar system. While Neptune doesn’t get as cold as Uranus it is on average colder. The upper atmosphere of Uranus is covered by a methane haze which hides the storms that take place in the cloud decks.'
+    },{
+        text: 'Uranus has two sets of rings of very thin set of dark colored rings',
+        class: 'article-node__fact'
+    },{
+        text: 'The ring particles are small, ranging from a dust-sized particles to small boulders. There are nine inner rings and two outer rings. They probably formed when one or more of Uranus’s moons were broken up in an impact. The first set of rings was discovered in 1977 and the second set was discovered in 2003 by the Hubble Space Telescope.'
+    },{
+        text: 'Uranus’ moons are named after characters created by William Shakespeare and Alaxander Pope',
+        class: 'article-node__fact'
+    },{
+        text: 'These include Oberon, Titania and Miranda.  All are frozen worlds with dark surfaces. Some are ice and rock mixtures.  The most interesting Uranian moon is Miranda; it has ice canyons, terraces, and other strange-looking surface areas.'
+    },{
+        text: 'Only one spacecraft has flown by Uranus',
+        class: 'article-node__fact'
+    },{
+        text: 'In 1986, the Voyager 2 spacecraft swept past the planet at a distance of 81,500 km. It returned the first close-up images of the planet, its moons, and rings.'
     }]
 };
