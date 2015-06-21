@@ -5,9 +5,7 @@ var React = require('react'),
 
 var Application = React.createClass({
     getInitialState: function(){
-        return {
-            height: 450
-        }
+        return { height: 450 };
     },
     componentDidMount: function(){
         var node = React.findDOMNode(this),
