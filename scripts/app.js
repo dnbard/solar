@@ -20468,7 +20468,7 @@ var Application = React.createClass({ displayName: 'Application',
         },
             height = this.state.height;
 
-        return React.createElement('div', { className: 'viewspace', style: style }, React.createElement(Stars, null), React.createElement(Planet, { name: 'mercury', boxHeight: height, left: '50' }), React.createElement(Planet, { name: 'venus', boxHeight: height, left: '150' }), React.createElement(Planet, { name: 'earth', boxHeight: height, left: '320' }), React.createElement(Planet, { name: 'mars', boxHeight: height, left: '495' }), React.createElement(Planet, { name: 'jupiter', boxHeight: height, left: '600' }), React.createElement(Planet, { name: 'saturn', boxHeight: height, left: '1000' }), React.createElement('div', { className: 'saturn__outer-ring' }), React.createElement('div', { className: 'saturn__inner-ring' }), React.createElement(Planet, { name: 'uranus', boxHeight: height, left: '1350' }));
+        return React.createElement('div', { className: 'viewspace', style: style }, React.createElement(Stars, null), React.createElement(Planet, { name: 'mercury', boxHeight: height, left: '50' }), React.createElement(Planet, { name: 'venus', boxHeight: height, left: '150' }), React.createElement(Planet, { name: 'earth', boxHeight: height, left: '320' }), React.createElement(Planet, { name: 'mars', boxHeight: height, left: '495' }), React.createElement(Planet, { name: 'jupiter', boxHeight: height, left: '600' }), React.createElement(Planet, { name: 'saturn', boxHeight: height, left: '1000' }), React.createElement('div', { className: 'saturn__outer-ring' }), React.createElement('div', { className: 'saturn__inner-ring' }), React.createElement(Planet, { name: 'uranus', boxHeight: height, left: '1350' }), React.createElement(Planet, { name: 'neptune', boxHeight: height, left: '1550' }));
     }
 });
 
@@ -20717,14 +20717,11 @@ module.exports = Planet;
 var React = require("react");
 
 var Social = React.createClass({ displayName: "Social",
-    onInfoClick: function onInfoClick() {},
     render: function render() {
-        return React.createElement("div", { className: "social" }, React.createElement("div", { className: "addthis_sharing_toolbox" }), React.createElement("div", { className: "icon-info", onClick: this.onInfoClick }));
+        return React.createElement("div", { className: "social" }, React.createElement("div", { className: "addthis_sharing_toolbox" }), React.createElement("div", { className: "source-site" }, React.createElement("span", null, "Made by Alex Bardanov. Find more space facts at "), React.createElement("a", { target: "_blank", href: "http://space-facts.com/" }, "space-facts.com")));
     }
 });
 module.exports = Social;
-
-//show site info via dispatcher
 
 },{"react":161}],169:[function(require,module,exports){
 'use strict';
@@ -21134,6 +21131,98 @@ module.exports = {
         'class': 'article-node__fact'
     }, {
         text: 'Mercury has just 38% the gravity of Earth, this is too little to hold on to what atmosphere it has which is blown away by solar winds. However while gases escape into space they are constantly being replenished at the same time by the same solar winds, radioactive decay and dust caused by micrometeorites'
+    }],
+    uranus: [{
+        text: 'Uranus',
+        'class': 'article-node__highlight'
+    }, {
+        text: 'Uranus is the seventh planet from the Sun. It’s not visible to the naked eye, and became the first planet discovered with the use of a telescope. Uranus is tipped over on its side with an axial tilt of 98 degrees. It is often described as “rolling around the Sun on its side.”'
+    }, {
+        text: 'Uranus was officially discovered by Sir William Herschel in 1781',
+        'class': 'article-node__fact'
+    }, {
+        text: 'It is too dim to have been seen by the ancients. At first Herschel thought it was a comet, but several years later it was confirmed as a planet. Herscal tried to have his discovery named “Georgian Sidus” after King George III. The name Uranus was suggested by astronomer Johann Bode. The name comes from the ancient Greek deity Ouranos.'
+    }, {
+        text: 'Uranus turns on its axis once every 17 hours, 14 minutes',
+        'class': 'article-node__fact'
+    }, {
+        text: 'The planet rotates in a retrograde direction, opposite to the way Earth and most other planets turn.'
+    }, {
+        text: 'Uranus makes one trip around the Sun every 84 Earth years',
+        'class': 'article-node__fact'
+    }, {
+        text: 'During some parts of its orbit one or the other of its poles point directly at the Sun and get about 42 years of direct sunlight. The rest of the time they are in darkness.'
+    }, {
+        text: 'Uranus is often referred to as an “ice giant” planet',
+        'class': 'article-node__fact'
+    }, {
+        text: 'Like the other gas giants, it has a hydrogen upper layer, which has helium mixed in. Below that is an icy “mantle, which surrounds a rock and ice core. The upper atmosphere is made of water, ammonia and the methane ice crystals that give the planet its pale blue color.'
+    }, {
+        text: 'Uranus hits the coldest temperatures of any planet',
+        'class': 'article-node__fact'
+    }, {
+        text: 'With minimum atmospheric temperature of -224°C Uranus is nearly coldest planet in the solar system. While Neptune doesn’t get as cold as Uranus it is on average colder. The upper atmosphere of Uranus is covered by a methane haze which hides the storms that take place in the cloud decks.'
+    }, {
+        text: 'Uranus has two sets of rings of very thin set of dark colored rings',
+        'class': 'article-node__fact'
+    }, {
+        text: 'The ring particles are small, ranging from a dust-sized particles to small boulders. There are nine inner rings and two outer rings. They probably formed when one or more of Uranus’s moons were broken up in an impact. The first set of rings was discovered in 1977 and the second set was discovered in 2003 by the Hubble Space Telescope.'
+    }, {
+        text: 'Uranus’ moons are named after characters created by William Shakespeare and Alaxander Pope',
+        'class': 'article-node__fact'
+    }, {
+        text: 'These include Oberon, Titania and Miranda.  All are frozen worlds with dark surfaces. Some are ice and rock mixtures.  The most interesting Uranian moon is Miranda; it has ice canyons, terraces, and other strange-looking surface areas.'
+    }, {
+        text: 'Only one spacecraft has flown by Uranus',
+        'class': 'article-node__fact'
+    }, {
+        text: 'In 1986, the Voyager 2 spacecraft swept past the planet at a distance of 81,500 km. It returned the first close-up images of the planet, its moons, and rings.'
+    }],
+    neptune: [{
+        text: 'Neptune',
+        'class': 'article-node__highlight'
+    }, {
+        text: 'Neptune is the eighth planet from the Sun and is the most distant planet from the Sun. This gas giant planet may have formed much closer to the Sun in early solar system history before migrating to its present position.'
+    }, {
+        text: 'Neptune was not known to the ancients',
+        'class': 'article-node__fact'
+    }, {
+        text: 'It is not visible to the naked eye and was first observed in 1846. Its position was determined using mathematical predictions. It was named after the Roman god of the sea.'
+    }, {
+        text: 'Neptune spins on its axis very rapidly',
+        'class': 'article-node__fact'
+    }, {
+        text: 'Its equatorial clouds take 18 hours to make one rotation. This is because Neptune is not solid body.'
+    }, {
+        text: 'Neptune is the smallest of the ice giants',
+        'class': 'article-node__fact'
+    }, {
+        text: 'Despite being smaller than Uranus, Neptune has a greater mass. Below its heavy atmosphere, Uranus is made of layers of hydrogen, helium, and methane gases. They enclose a layer of water, ammonia and methane ice. The inner core of the planet is made of rock.'
+    }, {
+        text: 'The atmosphere of Neptune is made of hydrogen and helium, with some methane',
+        'class': 'article-node__fact'
+    }, {
+        text: 'The methane absorbs red light, which makes the planet appear a lovely blue. High, thin clouds drift in the upper atmosphere.'
+    }, {
+        text: 'Neptune has a very active climate',
+        'class': 'article-node__fact'
+    }, {
+        text: 'Large storms whirl through its upper atmosphere, and high-speed winds track around the planet at up 600 meters per second. One of the largest storms ever seen was recorded in 1989. It was called the Great Dark Spot. It lasted about five years.'
+    }, {
+        text: 'Neptune has a very thin collection of rings',
+        'class': 'article-node__fact'
+    }, {
+        text: 'They are likely made up of ice particles mixed with dust grains and possibly coated with a carbon-based substance.'
+    }, {
+        text: 'Neptune has 14 moons',
+        'class': 'article-node__fact'
+    }, {
+        text: 'The most interesting moon is Triton, a frozen world that is spewing nitrogen ice and dust particles out from below its surface. It was likely captured by the gravitational pull of Neptune. It is probably the coldest world in the solar system.'
+    }, {
+        text: 'Only one spacecraft has flown by Neptune',
+        'class': 'article-node__fact'
+    }, {
+        text: 'In 1989, the Voyager 2 spacecraft swept past the planet. It returned the first close-up images of the Neptune system. The NASA/ESA Hubble Space Telescope has also studied this planet, as have a number of ground-based telescopes.'
     }]
 };
 
@@ -21287,6 +21376,55 @@ module.exports = {
             size: 0.012,
             speed: 0.4,
             layer: 2
+        }]
+    }, neptune: {
+        size: 170,
+        color: '#1B54BE',
+        particles: [{
+            color: '#16387F',
+            count: 2,
+            size: 0.22,
+            speed: 0.2,
+            layer: 2
+        }, {
+            color: '#FCFEF2',
+            count: 5,
+            size: 0.1,
+            speed: 0.3,
+            layer: 3
+        }, {
+            color: '#2871B5',
+            count: 10,
+            size: 0.08,
+            speed: 0.4,
+            layer: 4
+        }, {
+            color: '#3b3b3b',
+            count: 14,
+            size: 0.012,
+            speed: 0.65,
+            layer: 5
+        }],
+        lines: [{
+            top: 0,
+            height: 25,
+            color: '#4FA2D3'
+        }, {
+            top: 25,
+            height: 35,
+            color: '#246CB6'
+        }, {
+            top: 60,
+            height: 60,
+            color: '#39A6DE'
+        }, {
+            top: 120,
+            height: 30,
+            color: '#1E5CB1'
+        }, {
+            top: 145,
+            height: 30,
+            color: '#4DADE0'
         }]
     }
 };

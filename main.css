@@ -181,9 +181,6 @@ body {
   color: darkgray;
   font-size: 20pt;
 }
-.social div {
-  display: inline-block;
-}
 .social .icon-info {
   display: inline-block;
   cursor: pointer;
@@ -199,6 +196,17 @@ body {
 }
 .social .icon-info:hover {
   color: white;
+}
+.source-site {
+  display: block;
+  font-size: 11pt;
+  color: darkgray;
+}
+.source-site a {
+  color: darkgray;
+}
+.github-fork-ribbon {
+  background-color: #575757 !important;
 }
 @charset "UTF-8";
 
