@@ -167,6 +167,12 @@ module.exports = {
             size: 0.08,
             speed: 0.4,
             layer: 4
+        },{
+            color: '#3b3b3b',
+            count: 14,
+            size: 0.012,
+            speed: 0.65,
+            layer: 5
         }],
         lines: [{
             top: 0,

@@ -364,5 +364,51 @@ module.exports = {
         class: 'article-node__fact'
     },{
         text: 'In 1986, the Voyager 2 spacecraft swept past the planet at a distance of 81,500 km. It returned the first close-up images of the planet, its moons, and rings.'
+    }],
+    neptune:[{
+        text: 'Neptune',
+        class: 'article-node__highlight'
+    },{
+        text: 'Neptune is the eighth planet from the Sun and is the most distant planet from the Sun. This gas giant planet may have formed much closer to the Sun in early solar system history before migrating to its present position.'
+    },{
+        text: 'Neptune was not known to the ancients',
+        class: 'article-node__fact'
+    },{
+        text: 'It is not visible to the naked eye and was first observed in 1846. Its position was determined using mathematical predictions. It was named after the Roman god of the sea.'
+    },{
+        text: 'Neptune spins on its axis very rapidly',
+        class: 'article-node__fact'
+    },{
+        text: 'Its equatorial clouds take 18 hours to make one rotation. This is because Neptune is not solid body.'
+    },{
+        text: 'Neptune is the smallest of the ice giants',
+        class: 'article-node__fact'
+    },{
+        text: 'Despite being smaller than Uranus, Neptune has a greater mass. Below its heavy atmosphere, Uranus is made of layers of hydrogen, helium, and methane gases. They enclose a layer of water, ammonia and methane ice. The inner core of the planet is made of rock.'
+    },{
+        text: 'The atmosphere of Neptune is made of hydrogen and helium, with some methane',
+        class: 'article-node__fact'
+    },{
+        text: 'The methane absorbs red light, which makes the planet appear a lovely blue. High, thin clouds drift in the upper atmosphere.'
+    },{
+        text: 'Neptune has a very active climate',
+        class: 'article-node__fact'
+    },{
+        text: 'Large storms whirl through its upper atmosphere, and high-speed winds track around the planet at up 600 meters per second. One of the largest storms ever seen was recorded in 1989. It was called the Great Dark Spot. It lasted about five years.'
+    },{
+        text: 'Neptune has a very thin collection of rings',
+        class: 'article-node__fact'
+    },{
+        text: 'They are likely made up of ice particles mixed with dust grains and possibly coated with a carbon-based substance.'
+    },{
+        text: 'Neptune has 14 moons',
+        class: 'article-node__fact'
+    },{
+        text: 'The most interesting moon is Triton, a frozen world that is spewing nitrogen ice and dust particles out from below its surface. It was likely captured by the gravitational pull of Neptune. It is probably the coldest world in the solar system.'
+    },{
+        text: 'Only one spacecraft has flown by Neptune',
+        class: 'article-node__fact'
+    },{
+        text: 'In 1989, the Voyager 2 spacecraft swept past the planet. It returned the first close-up images of the Neptune system. The NASA/ESA Hubble Space Telescope has also studied this planet, as have a number of ground-based telescopes.'
     }]
 };
